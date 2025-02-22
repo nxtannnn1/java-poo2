@@ -1,46 +1,35 @@
 package Empresa;
-import java.util.Scanner;
+public class Funcionario extends Pessoa{
 
-public class Funcionario {
+    String salario;
+    String cargo;
 
-    private String nome;
-    private SEXO sexo;
-
-    public Funcionario(String nome, SEXO sexo){
-        this.nome=nome;
-        this.sexo=sexo;
+    public Funcionario(String nome, String idade, String salario, String cargo) {
+        super(nome, idade);
+        this.salario = salario;
+        this.cargo = cargo;
     }
 
-    public Funcionario (){
-
+    public String getSalario() {
+        return salario;
     }
 
-    public String getNome(){
-        return this.nome;
+    public void setSalario(String salario) {
+        this.salario = salario;
     }
 
-    public SEXO getSexo(){
-        return this.sexo;
+    public String getCargo() {
+        return cargo;
     }
 
-    public String setNome (Scanner sc){
-        System.out.println("Informar nome: ");
-        this.nome = sc.nextLine();
-        return this.nome;
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 
-    public SEXO setSexo (Scanner sc){
-        System.out.println("Informar sexo (MASC, FEMI, OUTRO)");
-        String sexoEscolhido = sc.nextLine().toUpperCase();
-            
-        try{
-            this.sexo=SEXO.valueOf(sexoEscolhido);
-        }
-
-        catch (IllegalArgumentException e){
-System.out.println("Sexo inválido");
-        }
-    
-        return this.sexo;
+    @Override
+    public String toString() {
+        return "Funcionario [salario=" + salario + ", nome=" + nome + ", cargo=" + cargo + ", idade=" + idade + "]";
     }
+
+
 }
