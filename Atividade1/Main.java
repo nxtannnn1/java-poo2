@@ -7,9 +7,9 @@ public class Main {
 
 public static void main(String[] args) {
 
-   ArrayList <Livro> livros = new ArrayList<>(Livro);
+   ArrayList<Livro> livros = new ArrayList<>();
 
-   livros.add();
+   //livros.add();
 
 }
 
