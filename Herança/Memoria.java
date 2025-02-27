@@ -44,21 +44,21 @@ public class Memoria extends Componente {
     public void cadastrarComponentes(Scanner input) {
 
         System.out.print("\nCadastrar marca da memoria: ");
-        String marca = input.nextLine();
+        String my_brand = input.nextLine();
 
         System.out.print("Cadastrar modelo da memoria: ");
-        String modelo = input.nextLine();
+        String my_model = input.nextLine();
 
         System.out.print("Cadastrar armazenamento da memoria: ");
-        String armazenamento = input.nextLine();
+        String my_storage = input.nextLine();
 
         System.out.print("Cadastrar frequencia da memoria: ");
-        String frequencia = input.nextLine();
+        String my_frequency = input.nextLine();
 
-        setMarca(marca);
-        setModelo(modelo);
-        setArmazenamento(armazenamento);
-        setFrequencia(frequencia);
+        setMarca(my_brand);
+        setModelo(my_model);
+        setArmazenamento(my_storage);
+        setFrequencia(my_frequency);
 
     }
 

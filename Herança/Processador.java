@@ -37,17 +37,17 @@ public class Processador extends Componente {
     public void cadastrarComponentes(Scanner input) {
 
         System.out.print("\nCadastrar marca do processador: ");
-        String marca = input.nextLine();
+        String my_brand = input.nextLine();
 
         System.out.print("Cadastrar modelo do processador: ");
-        String modelo = input.nextLine();
+        String my_model = input.nextLine();
 
         System.out.print("Cadastrar frequencia do processador: ");
-        String frequencia = input.nextLine();
+        String my_frequency = input.nextLine();
 
-        setMarca(marca);
-        setModelo(modelo);
-        setFrequencia(frequencia);
+        setMarca(my_brand);
+        setModelo(my_model);
+        setFrequencia(my_frequency);
 
     }
 
