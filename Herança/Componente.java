@@ -1,5 +1,7 @@
 package Herança;
 
+import java.util.Scanner;
+
 public abstract class Componente {
 
     protected String marca;
@@ -29,6 +31,8 @@ public abstract class Componente {
         this.modelo = modelo;
     }
 
-public abstract void exibirDescricao();
+    public abstract void exibirDescricao();
+
+    public abstract void cadastrarComponentes(Scanner input);
 
 }

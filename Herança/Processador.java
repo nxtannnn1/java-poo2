@@ -1,8 +1,14 @@
 package Herança;
 
+import java.util.Scanner;
+
 public class Processador extends Componente {
 
     private String frequencia;
+
+    public Processador() {
+
+    }
 
     public Processador(String frequencia) {
         this.frequencia = frequencia;
@@ -24,6 +30,25 @@ public class Processador extends Componente {
     @Override
     public void exibirDescricao() {
         System.out.println("\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nFrequencia: " + getFrequencia());
+    }
+
+    @Override
+
+    public void cadastrarComponentes(Scanner input) {
+
+        System.out.print("\nCadastrar marca do processador: ");
+        String marca = input.nextLine();
+
+        System.out.print("Cadastrar modelo do processador: ");
+        String modelo = input.nextLine();
+
+        System.out.print("Cadastrar frequencia do processador: ");
+        String frequencia = input.nextLine();
+
+        setMarca(marca);
+        setModelo(modelo);
+        setFrequencia(frequencia);
+
     }
 
 }

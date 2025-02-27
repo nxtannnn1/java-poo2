@@ -8,10 +8,12 @@ public class Main1 {
 
         try (Scanner input = new Scanner(System.in)) {
 
-            String marca;
-            String modelo;
-            String armazenamento;
-            String frequencia;
+            /*
+             * String marca;
+             * String modelo;
+             * String armazenamento;
+             * String frequencia;
+             */
             String option;
             String repetir = "s";
 
@@ -24,52 +26,17 @@ public class Main1 {
                 option = input.nextLine();
 
                 if (option.equals("1")) {
-
-                    while (repetir.equals("s")) {
-
-                        System.out.print("\nCadastrar marca da memoria: ");
-                        marca = input.nextLine();
-
-                        System.out.print("Cadastrar modelo da memoria: ");
-                        modelo = input.nextLine();
-
-                        System.out.print("Cadastrar armazenamento da memoria: ");
-                        armazenamento = input.nextLine();
-
-                        System.out.print("Cadastrar frequencia da memoria: ");
-                        frequencia = input.nextLine();
-
-                        Memoria memoria = new Memoria(marca, modelo, armazenamento, frequencia);
-
-                        minhasMemorias.add(memoria);
-
-                        System.out.print("\nContinuar cadastro de memórias: ");
-                        repetir = input.nextLine().toLowerCase();
-                    }
+                    Memoria memoria = new Memoria();
+                    memoria.cadastrarComponentes(input);
+                    minhasMemorias.add(memoria);
 
                 }
 
                 if (option.equals("2")) {
 
-                    while (repetir.equals("s")) {
-
-                        System.out.print("\nCadastrar marca do processador: ");
-                        marca = input.nextLine();
-
-                        System.out.print("Cadastrar modelo do processador: ");
-                        modelo = input.nextLine();
-
-                        System.out.print("Cadastrar frequencia do processador: ");
-                        frequencia = input.nextLine();
-
-                        Processador processador = new Processador(marca, modelo, frequencia);
-
-                        meusProcessadores.add(processador);
-
-                        System.out.print("\nContinuar cadastro de processadores: ");
-                        repetir = input.nextLine().toLowerCase();
-
-                    }
+                    Processador processador = new Processador();
+                    processador.cadastrarComponentes(input);
+                    meusProcessadores.add(processador);
 
                 }
 
@@ -87,8 +54,6 @@ public class Main1 {
             for (Processador p : meusProcessadores) {
                 p.exibirDescricao();
             }
-
-            input.close();
 
         }
 
