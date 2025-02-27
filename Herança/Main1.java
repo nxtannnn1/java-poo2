@@ -78,12 +78,12 @@ public class Main1 {
 
             }
 
-            System.out.println("Memórias cadastradas:");
+            System.out.println("\nMemórias cadastradas:");
             for (Memoria m : minhasMemorias) {
                 m.exibirDescricao();
             }
 
-            System.out.println("Processadores cadastrados:");
+            System.out.println("\nProcessadores cadastrados:");
             for (Processador p : meusProcessadores) {
                 p.exibirDescricao();
             }

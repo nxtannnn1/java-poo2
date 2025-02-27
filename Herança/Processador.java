@@ -23,7 +23,7 @@ public class Processador extends Componente {
 
     @Override
     public void exibirDescricao() {
-        System.out.println("\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nFrequencia: " + getFrequencia() + "\n");
+        System.out.println("\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nFrequencia: " + getFrequencia());
     }
 
 }

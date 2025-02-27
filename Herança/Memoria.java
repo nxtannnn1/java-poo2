@@ -34,7 +34,7 @@ public class Memoria extends Componente {
     @Override
     public void exibirDescricao() {
         System.out.println("\nMarca: " + getMarca() + "\nModelo: " + getModelo() + "\nArmazenamento: "
-                + getArmazenamento() + "\nFrequencia: " + getFrequencia() + "\n");
+                + getArmazenamento() + "\nFrequencia: " + getFrequencia());
     }
 
 }
