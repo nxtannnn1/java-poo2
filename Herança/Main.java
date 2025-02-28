@@ -8,12 +8,6 @@ public class Main {
 
         try (Scanner input = new Scanner(System.in)) {
 
-            /*
-             * String marca;
-             * String modelo;
-             * String armazenamento;
-             * String frequencia;
-             */
             String option;
             String repetir = "s";
 
